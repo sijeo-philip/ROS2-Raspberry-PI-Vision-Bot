@@ -6,7 +6,7 @@ class MinimalSubscriber(Node):
     """A ROS2 Node that receives and AmazingQuote and prints out its info"""
 
     def __init__(self):
-        super().__init__('simple_subscriber')
+        super().__init__('simple_rpi_subscriber')
         self.subscription = self.create_subscription(
             msg_type=Int16,
             topic='/pub_topic',
